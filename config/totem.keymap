@@ -96,13 +96,77 @@
     };
 
     behaviors {
-        hm: hm {
+        hm: homerow_mods {
             compatible = "zmk,behavior-hold-tap";
-            label = "HM";
-            bindings = <&none>, <&none>;
+            label = "HOMEROW_MODS";
+            bindings = <&kp>, <&kp>;
 
             #binding-cells = <2>;
             tapping-term-ms = <200>;
+            quick-tap-ms = <130>;
+            flavor = "tap-preferred";
+            hold-trigger-key-positions = <52>;
+        };
+
+        td_copy: td_copy {
+            compatible = "zmk,behavior-tap-dance";
+            label = "TD_COPY";
+            #binding-cells = <0>;
+            bindings = <&kp LG(C)>, <&ht_test LG(V) LG(X)>;
+
+            tapping-term-ms = <350>;
+        };
+
+        ht_test: ht_test {
+            compatible = "zmk,behavior-hold-tap";
+            label = "HT_TEST";
+            bindings = <&kp>, <&kp>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <350>;
+            flavor = "tap-preferred";
+        };
+
+        OSM_shift: OSM_shift {
+            compatible = "zmk,behavior-sticky-key";
+            label = "OSM_SHIFT";
+            bindings = <&kp>;
+            #binding-cells = <1>;
+            release-after-ms = <200>;
+            quick-release;
+        };
+
+        hms: homerow_shift {
+            compatible = "zmk,behavior-hold-tap";
+            label = "HOMEROW_SHIFT";
+            bindings = <&OSM_shift>, <&kp>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <200>;
+            quick-tap-ms = <130>;
+            flavor = "tap-preferred";
+        };
+
+        lt_thumb: lt_thumb {
+            compatible = "zmk,behavior-hold-tap";
+            label = "LT_THUMB";
+            bindings = <&mo>, <&kp>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <200>;
+            quick-tap-ms = <200>;
+            flavor = "tap-preferred";
+            retro-tap;
+        };
+
+        lt_alpha: lt_alpha {
+            compatible = "zmk,behavior-hold-tap";
+            label = "LT_ALPHA";
+            bindings = <&mo>, <&kp>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <200>;
+            quick-tap-ms = <200>;
             flavor = "tap-preferred";
         };
     };
@@ -130,7 +194,7 @@
 
             bindings = <
            &kp Q       &kp W       &kp E        &kp R        &kp T        &kp Y     &kp U            &kp I        &kp O       &kp P
-           &mt LGUI A  &mt LALT S  &mt LCTRL D  &mt LSHFT F  &kp G        &kp H     &mt RSHFT J      &mt RCTRL K  &mt RALT L  &mt RGUI SEMICOLON
+           &mt LGUI A  &hm LALT A  &hms LSHFT S &hm LGUI D   &hm LCTRL F  &kp G     &kp H            &hm LCTRL J  &hm RGUI K  &hms RSHIFT L       &hm RALT SEMI
 &kp LCTRL  &kp Z       &kp X       &kp C        &kp V        &kp B        &kp N     &kp M            &kp COMMA    &kp DOT     &kp FSLH            &kp ENTER
                                    &kp TAB      &lt 1 SPACE  &kp LSHFT    &kp RWIN  &lt 2 BACKSPACE  &lt 3 RGUI
             >;
