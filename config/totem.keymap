@@ -256,10 +256,10 @@
             //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
 
             bindings = <
-           &kp Q       &kp W         &kp E               &kp R        &kp T              &kp Y                  &kp U              &kp I               &kp O        &kp P
-           &hm LALT A  &hms LSHFT S  &hm LEFT_COMMAND D  &hm LCTRL F  &kp G              &kp H                  &hm RCTRL J        &hm RGUI K          &hm RSHFT L  &hm RALT SEMICOLON
-&kp GRAVE  &kp Z       &kp X         &kp C               &kp V        &lt_alpha 2 B      &kp N                  &kp M              &kp COMMA           &kp PERIOD   &kp SLASH           &kp BACKSLASH
-                                     &kp TAB             &kp RETURN   &lt_thumb 4 ESC    &lt_thumb 5 BACKSPACE  &lt_thumb 3 SPACE  &lt_thumb 5 DELETE
+           &kp Q       &kp W         &kp E               &kp R        &kp T              &kp Y                  &kp U               &kp I               &kp O             &kp P
+           &hm LALT A  &hms LSHFT S  &hm LEFT_COMMAND D  &hm LCTRL F  &kp G              &kp H                  &hm LEFT_CONTROL J  &hm LEFT_GUI K      &hm LEFT_SHIFT L  &hm LEFT_ALT SEMICOLON
+&kp GRAVE  &kp Z       &kp X         &kp C               &kp V        &lt_alpha 2 B      &kp N                  &kp M               &kp COMMA           &kp PERIOD        &kp SLASH               &kp BACKSLASH
+                                     &kp TAB             &kp RETURN   &lt_thumb 4 ESC    &lt_thumb 5 BACKSPACE  &lt_thumb 3 SPACE   &lt_thumb 5 DELETE
             >;
         };
 
