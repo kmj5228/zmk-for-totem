@@ -232,6 +232,30 @@
             quick-tap-ms = <200>;
             flavor = "tap-preferred";
         };
+
+        hmc: homerow_ctrl {
+            compatible = "zmk,behavior-hold-tap";
+            label = "HOMEROW_CTRL";
+            bindings = <&kp>, <&kp>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <200>;
+            quick-tap-ms = <130>;
+            flavor = "tap-preferred";
+            hold-trigger-key-positions = <52 23 3 36>;
+        };
+
+        hmo: homerow_command {
+            compatible = "zmk,behavior-hold-tap";
+            label = "HOMEROW_COMMAND";
+            bindings = <&kp>, <&kp>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <200>;
+            quick-tap-ms = <130>;
+            flavor = "tap-preferred";
+            hold-trigger-key-positions = <52 10 21 22 24 23>;
+        };
     };
 
     keymap {
@@ -256,10 +280,10 @@
             //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
 
             bindings = <
-           &kp Q       &kp W         &kp E               &kp R              &kp T              &kp Y                  &kp U               &kp I               &kp O             &kp P
-           &hm LALT A  &hms LSHFT S  &hm LEFT_COMMAND D  &hm LCTRL F        &kp G              &kp H                  &hm LEFT_CONTROL J  &hm LEFT_GUI K      &hm LEFT_SHIFT L  &hm LEFT_ALT SEMICOLON
-&kp GRAVE  &kp Z       &kp X         &kp C               &kp V              &lt_alpha 3 B      &kp N                  &kp M               &kp COMMA           &kp PERIOD        &kp SLASH               &kp BACKSLASH
-                                     &kp TAB             &lt_thumb 2 ENTER  &lt_alpha 5 ESC    &lt_thumb 6 BACKSPACE  &lt_thumb 4 SPACE   &lt_thumb 5 DELETE
+           &kp Q       &kp W         &kp E                &kp R              &kp T              &kp Y                  &kp U                &kp I               &kp O             &kp P
+           &hm LALT A  &hms LSHFT S  &hmo LEFT_COMMAND D  &hmc LCTRL F       &kp G              &kp H                  &hmc LEFT_CONTROL J  &hmo LEFT_GUI K     &hm LEFT_SHIFT L  &hm LEFT_ALT SEMICOLON
+&kp GRAVE  &kp Z       &kp X         &kp C                &kp V              &lt_alpha 3 B      &kp N                  &kp M                &kp COMMA           &kp PERIOD        &kp SLASH               &kp BACKSLASH
+                                     &kp TAB              &lt_thumb 2 ENTER  &lt_alpha 5 ESC    &lt_thumb 6 BACKSPACE  &lt_thumb 4 SPACE    &lt_thumb 5 DELETE
             >;
         };
 
