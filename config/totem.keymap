@@ -298,10 +298,10 @@
 
         NAV {
             bindings = <
-            &trans  &trans  &trans  &trans  &trans    &trans          &trans          &trans        &trans           &trans
-            &trans  &trans  &trans  &trans  &trans    &kp LEFT_ARROW  &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT_ARROW  &trans
-&caps_word  &trans  &trans  &trans  &trans  &trans    &trans          &trans          &trans        &trans           &trans  &kp SQT
-                            &trans  &trans  &trans    &trans          &trans          &trans
+              &trans  &trans  &trans  &trans  &trans    &trans          &trans          &trans        &trans           &trans
+              &trans  &trans  &trans  &trans  &trans    &kp LEFT_ARROW  &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT_ARROW  &trans
+&kp CAPSLOCK  &trans  &trans  &trans  &trans  &trans    &trans          &trans          &trans        &trans           &trans  &kp SQT
+                              &trans  &trans  &trans    &trans          &trans          &trans
             >;
         };
 
