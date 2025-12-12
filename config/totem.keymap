@@ -298,10 +298,10 @@
 
         NAV {
             bindings = <
-        &trans  &trans  &trans  &trans  &trans    &trans          &trans          &trans        &trans           &trans
-        &trans  &trans  &trans  &trans  &trans    &kp LEFT_ARROW  &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT_ARROW  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans          &trans          &trans        &trans           &trans  &trans
-                        &trans  &trans  &trans    &trans          &trans          &trans
+            &trans  &trans  &trans  &trans  &trans    &trans          &trans          &trans        &trans           &trans
+            &trans  &trans  &trans  &trans  &trans    &kp LEFT_ARROW  &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT_ARROW  &trans
+&caps_word  &trans  &trans  &trans  &trans  &trans    &trans          &trans          &trans        &trans           &trans  &kp SQT
+                            &trans  &trans  &trans    &trans          &trans          &trans
             >;
         };
 
@@ -316,9 +316,9 @@
 
         NUM {
             bindings = <
-        &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
         &trans  &trans  &trans  &trans  &trans    &kp N5  &kp N6  &kp N7  &kp N8  &kp N9
-&trans  &trans  &trans  &trans  &trans  &trans    &kp N0  &kp N1  &kp N2  &kp N3  &kp N4  &trans
+        &trans  &trans  &trans  &trans  &trans    &kp N0  &kp N1  &kp N2  &kp N3  &kp N4
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
                         &trans  &trans  &trans    &trans  &trans  &trans
             >;
         };
