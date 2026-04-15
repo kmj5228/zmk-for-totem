@@ -28,6 +28,8 @@
     tapping-term-ms = <170>;
 };
 
+&tog { toggle-mode = "flip"; };
+
 / {
     combos {
         compatible = "zmk,combos";
