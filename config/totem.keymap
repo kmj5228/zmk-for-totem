@@ -141,6 +141,16 @@
             bindings = <&kp LC(SPACE)>;
             key-positions = <33 36>;
         };
+
+        prev_tab {
+            bindings = <&kp LG(LS(LEFT_BRACKET))>;
+            key-positions = <16 17 18>;
+        };
+
+        next_tab {
+            bindings = <&kp LG(LS(RIGHT_BRACKET))>;
+            key-positions = <7 8 6>;
+        };
     };
 
     macros {
